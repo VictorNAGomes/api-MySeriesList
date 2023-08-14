@@ -1,5 +1,5 @@
-﻿const a = 2
-const b = 2
+﻿    const a = 2
+const b = 2;
 
 console.error('b' + b)
 console.error('a' + a)
