@@ -1,7 +1,9 @@
-var a = 2
+﻿const a = 2
+const b = 2
 
-console.log('a' + a)
+console.error('b' + b)
+console.error('a' + a)
 
-if (a == 2 && a == 2 && a == 2 && a == 2 && a == 2) {
-    console.log('a')
+if (a === 2 && a === 2 && a === 2 && a === 2 && a === 2) {
+    console.error('a')
 }
