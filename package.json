@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "vitest",
         "prettier": "npx prettier --write --ignore-unknown .",
         "prepare": "husky install"
     },
@@ -34,7 +34,8 @@
         "lint-staged": "^14.0.0",
         "prettier": "npm:@btmills/prettier@^3.0.0",
         "prisma": "^5.1.1",
-        "typescript": "^5.1.6"
+        "typescript": "^5.1.6",
+        "vitest": "^0.34.1"
     },
     "dependencies": {
         "@prisma/client": "^5.1.1"
