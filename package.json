@@ -35,5 +35,8 @@
         "prettier": "npm:@btmills/prettier@^3.0.0",
         "prisma": "^5.1.1",
         "typescript": "^5.1.6"
+    },
+    "dependencies": {
+        "@prisma/client": "^5.1.1"
     }
 }
