@@ -5,12 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "prettier": "npx prettier --write --ignore-unknown ."
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "npx lint-staged"
-        }
+        "prettier": "npx prettier --write --ignore-unknown .",
+        "prepare": "husky install"
     },
     "lint-staged": {
         "src/**/*.ts": "npx eslint --fix src --ext .ts"
