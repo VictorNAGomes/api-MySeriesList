@@ -12,7 +12,12 @@ const User = z.object({
                 message: 'Invalid alphanumeric format',
             },
         ),
-    password: z.string(),
+    password: z
+        .string()
+        .min(8)
+        .regex(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/, {
+            message: 'The password is not strong enough',
+        }),
 })
 
 export type CreateUserDto = z.infer<typeof User>
